@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .about{
+                color: black;
+                display: flex;
+                justify-content: space-evenly;
+                width: auto;
+                background-color: black;
+            }
+            .s1{
+                width: 45%;
+                border-style: solid;
+                border-width: 10px;
+                border-color: skyblue;
+                background-color:lightgrey;
+            }
+            .s2{
+                width: 35%;
+                border-style: solid;
+                border-width: 10px;
+                border-color: skyblue;
+                background-color:lightgrey;
+            }
+            .li{
+                border-style: inset;
+                margin: 70px auto;
+                background-color:skyblue;
+                
+            }
+            #list{
+                overflow-y: scroll;
+                height: 350px;
+                border-style: inset;
+                background-color:whitesmoke;
+            }
+        
+            .main{
+                text-align: center;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                color: white;
+                
+               
+            }
+            .second{
+                background-image: url(images/back2.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+            }
+            .first{
+                background-image: url(images/front.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 1000px;
+            }
+            .mentor{
+                display: flex;
+                margin: auto;
+                width: 100%;
+                justify-content: space-evenly;
+            }
+            .student{
+                display: flex;
+                flex-wrap: wrap;
+                margin: auto;
+                width: 100%;
+                justify-content: space-evenly;
+            }
+            .stu:hover{
+                width: 320px;
+                opacity: 1;
+                height: auto;
+                
+            }
+            .link{
+                width: 100%;
+                justify-content: space-evenly;
+                display: flex;
+                flex-direction: row;
+                margin: 20px auto;
+                
+            }
+            
+            .stu img{
+                margin: auto;
+            }
+            .stu:hover{
+                color:rgb(0, 132, 255);
+                font-size:larger;
+            }
+            .men:hover img{
+                width: 400px;
+                height: auto;
+            }
+            .men:hover{
+                color:rgb(0, 132, 255);
+                font-size: larger;
+            }
+            .he:hover{
+                color:rgb(0, 255, 157);
+                font-size: xx-large;
+            }
+            .mave:hover{
+                color:rgb(0, 132, 255);
+                font-size: x-large;
+            }
+            
+            
+            @media (max-width: 700px){
+                .mentor{
+                    flex-direction: column;
+                }
+                .first{
+                    height: auto;
+                }
+            
+            }
+            
+            
+            .stu{
+                    display: flex;
+                    flex-direction: column;
+                    background-color:gainsboro;
+                    margin-top: 50px;
+                    margin-left: 30px;    
+                }
+            .bu{
+                width:100px ;
+                height:30px ;
+                margin: 20px auto;
+            }
+            .bu:hover{
+                opacity: 0.5;
+                
+            }
+            .third{
+                display: flex;
+                flex-direction: column;
+                background-color:rgba(0, 0, 0, 0.863);
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                margin: 50px auto;
+                background-color:lightgrey;
+                border-style: solid;
+                border-width: 10px;
+                border-color: skyblue;
+                padding: 30px 30px 30px 30px;
+
+            }
+            #d{
+                padding-top: 0%;
+                padding-bottom: 150px;
+            }
+            .lab{
+                margin-right: 600px;
+                margin-left: 0px;
+                color: whitesmoke;
+                font-size: large;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: silver;
+                padding-right: 30px;
+                margin-top: 2%;
+                margin-bottom: 0.5%;
+            }
+            #fn{
+                width: 200px;
+                height: 20px;
+            }
+            #ln{
+                width: 200px;
+                height: 20px;
+            }
+            #pn{
+                height: 20px;
+            }
+            #gi{
+                height: 20px;
+            }
+            #sb{
+                height: 30px;
+                width: 100px;
+                margin: 4% auto;
+            }
+            #project{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin: auto;
+                background-color: red;
+                width: 100%;
+                text-align: center;
+                justify-content: space-evenly;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+        <div class="first">    
+        <div class="mave">
+            <h1>TYP MAVERICK</h1>
+            <p>TYP is a organisaztion which is on its way to make a community of full stack developer</p>
+
+        </div>
+        <div>
+            <h2 class="he">MENTOR</h2>
+        </div>
+        <div class="mentor">
+            <div class="men" id="m1">
+                <h2>Devansh Srivastav</h2>
+                <img src="images/de.jpg" alt="m1" height="400px" width="350px">
+            </div>
+            <div class="men" id="m2">
+                <h2>Gaurav Chauhan</h2>
+                <img src="images/ga.jpg" alt="m2" height="400px" width="350px">
+            </div>
+        </div>
+        </div>
+        <div class="about">
+            <div class="s1">
+                <h1>THE YOUTH PROJECT</h1>
+                <h2>Vission</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolore quis doloremque architecto corporis ipsum quidem odit, facere rem minima necessitatibus aspernatur, inventore natus vero iure recusandae! Suscipit, qui magni?</p>
+                <h2>Mission</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt odio voluptas consectetur voluptatibus, quo quae quibusdam maxime aliquam et dicta tempore est quos. Eaque amet obcaecati reiciendis facere velit.</p>
+                <h2>community</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias modi architecto omnis quaerat velit, id, eos corrupti illo sit, mollitia corporis. Omnis doloribus repellendus sint provident iure expedita ipsam voluptate.</label></p>
+            </div>
+            <div class='s2' id="qw">
+                <h1>MEMBERS NAME</h1>
+                <ul id="list">
+                    <li class="li">Shailly</li>
+                    <li class="li">Aditya Khare</li>
+                    <li class="li">Sakshi Mishra</li>
+                    <li class="li">Dheeraj Borawat</li>
+                    <li class="li">Yamini-Vyas</li>
+                    <li class="li">Aayush Abhishek</li>
+                    <li class="li">Prasheet</li>
+                    <li class="li">shivam Pandey</li>
+
+                </ul>
+                <button class="bu" id="ub" onclick="update()">Update Memberlist</button>
+            </div>
+        </div>
+        <div class="second">
+        <div>
+            <h2 class="he" >WARRIOR</h2>
+        </div>
+        <div class="student">
+            
+            <div class="stu" id="s1">
+                <h2>ADITYA KHARE</h2>
+                <img src="images/ad.jpg" alt="s1" height="350px" width="300px">
+                <div class="link">
+                    <a href='' target="_blank"><img src="images/in.png" width="50px" height="50px alt="instagram"</a>
+                    <a href="" target="_blank"><img src="images/l.png" width="50px" height="50px" alt="linkedin"></a>
+                </div>
+                <button class="bu">Contact info</button>
+            </div>
+            <div class="stu" id="s2">
+                <h2>Priyanka Chaudhary</h2>
+                <img src="images/pr.jpeg" alt="s2" height="350px" width="300px">
+                <div class="link">
+                    <a href='' target="_blank"><img src="images/in.png" width="50px" height="50px alt="instagram"</a>
+                    <a href="" target="_blank"><img src="images/l.png" width="50px" height="50px" alt="linkedin"></a>
+                </div>
+                <button class="bu">Contact info</button>
+            </div>
+            <div class="stu" id="s3">
+                <h2>Dheeraj Borawat</h2>
+                <img src="images/dh.jpeg" alt="s3" height="350px" width="300px">
+                <div class="link">
+                    <a href='' target="_blank"><img src="images/in.png" width="50px" height="50px alt="instagram"</a>
+                    <a href="" target="_blank"><img src="images/l.png" width="50px" height="50px" alt="linkedin"></a>
+                </div>
+                <button class="bu">Contact info</button>
+            </div>
+            <div class="stu" id="s4">
+                <h2>Sakshi</h2>
+                <img src="images/sa.jpeg" alt="s4" height="350px" width="300px">
+                <div class="link">
+                    <a href='' target="_blank"><img src="images/in.png" width="50px" height="50px alt="instagram"</a>
+                    <a href="" target="_blank"><img src="images/l.png" width="50px" height="50px" alt="linkedin"></a>
+                </div>
+                <button class="bu">Contact info</button>
+            </div>
+            <div class="stu" id="s5">
+                <h2>Shailly</h2>
+                <img src="images/sh.jpg" alt="s5" height="350px" width="300px">
+                <div class="link">
+                    <a href='' target="_blank"><img src="images/in.png" width="50px" height="50px alt="instagram"</a>
+                    <a href="" target="_blank"><img src="images/l.png" width="50px" height="50px" alt="linkedin"></a>
+                </div>
+                <button class="bu">Contact info</button>
+            </div>
+            <div class="stu" id="s6">
+                <h2>Dope Code</h2>
+                <img src="images/do.jpeg" alt="s6" height="350px" width="300px">
+                <div class="link">
+                    <a href='' target="_blank"><img src="images/in.png" width="50px" height="50px alt="instagram"</a>
+                    <a href="" target="_blank"><img src="images/l.png" width="50px" height="50px" alt="linkedin"></a>
+                </div>
+                <button class="bu">Contact info</button>
+            </div>
+            <div class="stu" id="s7">
+                <h2>Prasheet</h2>
+                <img src="images/pr.jpeg" alt="s7" height="350px" width="300px">
+                <div class="link">
+                    <a href='' target="_blank"><img src="images/in.png" width="50px" height="50px alt="instagram"</a>
+                    <a href="" target="_blank"><img src="images/l.png" width="50px" height="50px" alt="linkedin"></a>
+                </div>
+                <button class="bu">Contact info</button>
+            </div>
+            <div class="stu" id="s8">
+                <h2>Harsh Yadav</h2>
+                <img src="images/ha.jpeg" alt="s8" height="350px" width="300px">
+                <div class="link">
+                    <a href='' target="_blank"><img src="images/in.png" width="50px" height="50px alt="instagram"</a>
+                    <a href="" target="_blank"><img src="images/l.png" width="50px" height="50px" alt="linkedin"></a>
+                </div>
+                <a href="https://typ-mavericks-harshdeepyadav.netlify.app/" target="_blank"><button class="bu">website</button></a>
+            </div>
+            <div class="stu" id="s9">
+                <h2>Veena Baraik</h2>
+                <img src="images/ve.jpeg" alt="s9" height="350px" width="300px">
+                <div class="link">
+                    <a href='' target="_blank"><img src="images/in.png" width="50px" height="50px alt="instagram"</a>
+                    <a href="" target="_blank"><img src="images/l.png" width="50px" height="50px" alt="linkedin"></a>
+                </div>
+                <a href="https://typ-mavericks-veenabaraik.netlify.app/" target="_blank"><button class="bu">website</button></a>
+            </div>
+            <div class="stu" id="s10">
+                <h2>Rohit</h2>
+                <img src="images/ro.jpeg" alt="s10" height="350px" width="300px">
+                <div class="link">
+                    <a href='' target="_blank"><img src="images/in.png" width="50px" height="50px alt="instagram"</a>
+                    <a href="" target="_blank"><img src="images/l.png" width="50px" height="50px" alt="linkedin"></a>
+                </div>
+                <button class="bu">Contact info</button>
+            </div>
+            <div class="stu" id="s11">
+                <h2>Ayush Abhishek</h2>
+                <img src="images/ay.jpeg" alt="s11" height="350px" width="300px">
+                <div class="link">
+                    <a href='' target="_blank"><img src="images/in.png" width="50px" height="50px alt="instagram"</a>
+                    <a href="" target="_blank"><img src="images/l.png" width="50px" height="50px" alt="linkedin"></a>
+                </div>
+                <button class="bu">Contact info</button>
+            </div>
+            <div class="stu" id="s12">
+                <h2>Yamini Vyas</h2>
+                <img src="images/ya.jpeg" alt="s12" height="350px" width="300px">
+                <div class="link">
+                    <a href='https://www.instagram.com/the_cutee_yami/' target="_blank"><img src="images/in.png" width="50px" height="50px alt="instagram"</a>
+                    <a href="http://www.linkedin.com/in/yamini-vyas-coderMERN" target="_blank"><img src="images/l.png" width="50px" height="50px" alt="linkedin"></a>
+                </div>
+                <button class="bu">Contact info</button>
+            </div>
+            <div class="stu" id="s13">
+                <h2>bhumika</h2>
+                <img src="images/bh.jpeg" alt="s13" height="350px" width="300px">
+                <div class="link">
+                    <a href='https://www.instagram.com/bhumika_mahala/' target="_blank"><img src="images/in.png" width="50px" height="50px alt="instagram"</a>
+                    <a href="https://www.linkedin.com/mwlite/in/bhumika-mahala-4b1421185" target="_blank"><img src="images/l.png" width="50px" height="50px" alt="linkedin"></a>
+                </div>
+                <a href="typ-maverick-bhumika.netlify.app" target="_blank"><button class="bu">website</button></a>
+            </div>
+            <div class="stu" id="s14">
+                <h2>Shivam Pandey</h2>
+                <img src="images/sgi.jpeg" alt="s14" height="350px" width="300px">
+                <div class="link">
+                    <a href='https://www.instagram.com/shivampandey014/' target="_blank"><img src="images/in.png" width="50px" height="50px alt="instagram"</a>
+                    <a href="https://www.linkedin.com/in/shivam-thedeveloper" target="_blank"><img src="images/l.png" width="50px" height="50px" alt="linkedin"></a>
+                </div>
+                <a href="http://typ-mavericks-shivam-pandey.netlify.app" target="_blank"><button class="bu">website</button></a>
+            </div>
+            <div class="stu" id="s15">
+                <h2>Danish</h2>
+                <img src="images/da.jpeg" alt="s15" height="350px" width="300px">
+                <div class="link">
+                    <a href='-https://www.instagram.com/_danish07_/' target="_blank"><img src="images/in.png" width="50px" height="50px alt="instagram"</a>
+                    <a href="https://www.linkedin.com/mwlite/in/danishbiargi07" target="_blank"><img src="images/l.png" width="50px" height="50px" alt="linkedin"></a>
+                </div>
+                <button class="bu">Contact info</button>
+            </div>
+            <div class="stu" id="s16">
+                <h2>Ashish</h2>
+                <img src="images/as.jpeg" alt="s16" height="350px" width="300px">
+                <div class="link">
+                    <a href='https://github.com/ashishrathod95' target="_blank"><img src="images/git.png" width="50px" height="50px alt="instagram"</a>
+                    <a href="https://www.linkedin.com/in/ashishr0410" target="_blank"><img src="images/l.png" width="50px" height="50px" alt="linkedin"></a>
+
+                </div>
+                <a href="https://typ-mavericks-ashishr.netlify.app/" target="_blank"><button class="bu">website</button></a>
+                
+            </div>
+
+        </div>
+        </div>
+        <div class="third">
+            <div id="project" style="background-color: lightcyan;">
+
+            </div>
+            <form id="ff">
+                <label class="lab">First Name</label>
+                <input type="text" id="fn">
+                <label class="lab">Last Name</label>
+                <input type="text" id="ln">
+                <label class="lab">Project Name</label>
+                <input type="text" id="pn">
+                <label class="lab">Github link</label>
+                <input type="text" id="gi">
+                <label class="lab">Description</label>
+                <input type="text" id="d">
+                <button class="bu" type="button" onclick="profile(fn.value,ln.value)">Done</button>
+            </form>
+        </div>
+        </div>
+        <script>
+            bb=[]
+            li=document.getElementsByClassName('li')
+            for(i=0;i<li.length;i++){
+                bb.push(li[i].innerHTML)
+            }
+            function profile(a,b) {
+                var name=a+' '+b
+                if (bb.includes(name)){
+                    var div=document.createElement('div')
+                
+                    div.style.backgroundColor='grey'
+                    div.style.color='whitesmoke'
+                    div.style.display='flex'
+                    div.style.flexDirection='column'
+                    div.style.textAlign='left'
+                    var nam=document.createElement('h1')
+                    nam.innerHTML=name
+                    //nam.style.left='initial'
+                    div.append(nam)
+                    var pname=document.createElement('h2')
+                    pname.innerHTML='Project Name'
+                    pname.style.paddingTop='10px'
+                    pname.style.marginTop='20px'
+                    pname.style.marginBottom='5px'
+                    div.append(pname)
+
+                    var project=document.createElement('p')
+                    project.innerHTML=document.getElementById('pn').value
+                    //project.style.marginRight='200px
+                    project.style.paddingBottom='10px'
+                    project.style.marginBottom='20px'
+                    project.style.marginTop='5px'
+                    div.append(project)
+                    
+                    var link=document.createElement('a')
+                    link.href=document.getElementById('gi').value
+                    link.innerHTML=document.getElementById('gi').value
+                    link.style.paddingBottom='10px'
+                    link.style.marginBottom='10px'
+                    link.style.marginTop='5px'
+
+
+                    var git=document.createElement('h2')
+                    git.innerText='Github Link'
+                    //git.style.marginRight='200px'
+                    //git.style.marginLeft='0px'
+                    git.style.paddingTop='10px'
+                    git.style.marginTop='10px'
+                    git.style.marginBottom='5px'
+                    div.append(git)
+                    div.append(link)
+
+                    
+                    var disk=document.createElement('h2')
+                    disk.innerHTML='Project Discription'
+                    disk.style.paddingTop='10px'
+                    disk.style.marginTop='10px'
+                    disk.style.marginBottom='5px'
+
+
+                    //disk.style.marginRight='200px'
+                    div.append(disk)
+                    var dis=document.createElement('p')
+                    dis.innerText=document.getElementById('d').value
+                    dis.style.paddingBottom='10px'
+                    dis.style.marginBottom='10px'
+                    dis.style.marginTop='5px'
+                    //dis.style.marginRight='200px'
+                    div.append(dis)
+
+                
+                    var div2=document.getElementById('project')
+                    
+                    div2.appendChild(div)
+                    
+                }
+                else{
+                    alert('User not exit, please check or update member list ')
+                }
+            }
+
+            function update(){
+                b=document.createElement('input')
+                b.type='submit'
+                document.getElementById('qw').replaceChild(b,document.getElementById('ub'))
+                a=document.createElement('input')
+                a.type='text'
+                document.getElementById('qw').insertBefore(a,b)
+                b.setAttribute('onclick','listi()')
+                a.id='text'
+                b.id='submit'
+            }
+
+            function listi(){
+                val=document.getElementById('text').value
+
+                if (bb.includes(val)){
+                    alert('already exist')
+                }
+                else{
+                    this.bb.splice(0,0,val)
+                    li=document.createElement('li')
+                    li.style.margin = "70px auto" ;
+                    li.style.borderStyle = "inset" ;
+                    li.style.backgroundColor='skyblue'
+                    li.innerHTML=val
+                    
+                    document.getElementById('list').insertBefore(li,document.getElementById('list').firstChild)
+                    document.getElementById('qw').removeChild(document.getElementById('text'))
+                    document.getElementById('qw').removeChild(document.getElementById('submit'))
+                    b=document.createElement('button')
+                    b.innerHTML='Update Member'
+                    b.setAttribute('onclick','update()')
+                    b.id='ub'
+            
+                    document.getElementById('qw').append(b)
+                }
+
+            } 
+
+        </script>
+    </body>
+</html>
